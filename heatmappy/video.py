@@ -84,7 +84,7 @@ class VideoHeatmapper:
         for x, y, t in pts:
             start = (t // interval) * interval
             pt_last_interval = int(start + heat_decay_s*1000) if heat_decay_s else last_interval
-            for frame_time in range(start, pt_last_interval+1, interval):
+            for frame_time in range(int(start), int(pt_last_interval)+1, int(interval)):
                 frames[frame_time].append((x, y))
 
         return frames
