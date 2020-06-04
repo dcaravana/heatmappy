@@ -1,7 +1,7 @@
 cycler
 numpy
 matplotlib
-moviepy==1.0.0
+moviepy
 Pillow
 pyparsing
 python-dateutil
